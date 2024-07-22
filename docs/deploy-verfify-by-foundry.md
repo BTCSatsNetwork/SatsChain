@@ -21,7 +21,7 @@ pragma solidity ^0.8.13;
 import "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
 
 contract TokenTest is ERC20 {
-    constructor() ERC20("BEVM", "BEVM") {
+    constructor() ERC20("SatsChain", "SatsChain") {
         _mint(msg.sender, 1000 * 10 ** 18);
     }
 } 
@@ -61,7 +61,7 @@ VERIFIER_URL=https://scan-canary-test-api.bevm.io/api
 source .env
 ```
 ## Deploy and verify  your contract
-> When utilizing BEVM Canary/BEVM Canary TestNet, to align the Solidity version correctly, you may insert "solc_version = "0.8.13" " into the "foundry.toml" file within the "[profile.default]" section. This adjustment may require you to modify certain dependencies.
+> When utilizing SatsChain Mainnet, to align the Solidity version correctly, you may insert "solc_version = "0.8.13" " into the "foundry.toml" file within the "[profile.default]" section. This adjustment may require you to modify certain dependencies.
 
 ```
 forge script script/TokenTest.s.sol --rpc-url $ETH_RPC_URL --private-key $PRIVATE_KEY --broadcast --verify --verifier blockscout --verifier-url $VERIFIER_URL

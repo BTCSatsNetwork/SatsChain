@@ -9,7 +9,6 @@ SatsChain is a Bitcoin Layer-2 Network developed based on the BEVM Stack, fully 
   - [Quick Start](#quick-start)
     - [Overview](#overview)
     - [Network Configuration](#network-configuration)
-    - [Development Tools](#development-tools)
   - [SatsChain Bridge](#satschain-bridge)
   - [Build Decentralized Apps](#build-decentralized-apps)
     - [Fee Calculation](#fee-calculation)
@@ -18,6 +17,7 @@ SatsChain is a Bitcoin Layer-2 Network developed based on the BEVM Stack, fully 
     - [Libraries](#libraries)
   - [Run a SatsChain Node](#run-a-satschain-node)
     - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
 
 ## Quick Start
 
@@ -37,19 +37,14 @@ To configure your network to connect to SatsChain, use the following parameters:
 - **Currency Symbol**: `SATS`
 - **Block Explorer URL**: `http://scan-satschain.bevm.io/`
 
-### Development Tools
+For more detailed configuration instructions, please refer to the [Metamask Setup Guide](docs/setup-metamask.md).
 
-We provide a suite of tools to help developers build and deploy DApps on SatsChain:
-
-- **SatsChain CLI**: Command-line interface for interacting with the SatsChain network.
-- **SatsChain SDK**: Software development kit for building applications.
-- **SatsChain IDE**: Integrated development environment tailored for SatsChain development.
 
 ## SatsChain Bridge
 
 The SatsChain Bridge enables seamless asset transfers between Bitcoin and SatsChain. This bridge ensures that assets can be securely and efficiently moved, facilitating interoperability between the networks.
 
-- **Bridge Documentation**: [SatsChain Bridge Guide](https://docs.satschain.network/bridge)
+- **Bridge Documentation**: [SatsChain Bridge Guide](https://github.com/BTCSatsNetwork/SatsChain-Bridge)
 - **Supported Assets**: Bitcoin (BTC), Sats (SATS), and other ERC-20 tokens.
 
 ## Build Decentralized Apps
@@ -63,8 +58,10 @@ Transaction fees on SatsChain are calculated using sats (BRC-20) tokens. The gas
 
 SatsChain supports smart contracts fully compatible with the Ethereum Virtual Machine (EVM). You can deploy your existing Ethereum contracts with minimal modifications.
 
-- **Deploying Contracts**: Use tools like Remix, Truffle, or Hardhat.
-- **Example Contract**: [SimpleStorage.sol](https://github.com/satschain/examples/SimpleStorage.sol)
+For detailed instructions on deploying smart contracts, please refer to the following guides:
+* [Deploy Smart Contract Guide](docs/deploy-smart-contract.md)
+* [Foundry Guide](docs/foundry.md)
+* [Deploy & Verify by Foundry](docs/deploy-verfify-by-foundry.md)
 
 ### Integrations
 
@@ -91,6 +88,9 @@ Running a SatsChain node allows you to participate directly in the network, help
 
 - **Software Requirements**: Latest version of Docker, Git
 
+### Installation
+
+To run a SatsChain node, follow the instructions in the [Run Node Guide](docs/run-node.md).
 
 ------
 

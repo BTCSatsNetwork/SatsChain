@@ -14,12 +14,12 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol";
 
 contract MyToken is ERC20, ERC20Permit {
-    constructor() ERC20("BEVM", "BEVM") ERC20Permit("BEVM") {
+    constructor() ERC20("SatsChain", "SatsChain") ERC20Permit("SatsChain") {
         _mint(msg.sender, 1000 * 10 ** 18);
     }
 }
 ```
-This smart contract is designed to deploy an ERC20 token named 'BEVM' with the ticker 'BEVM' and a total supply of 1000, utilizing 18 decimals for precision. To compile this contract, navigate to the Solidity Compiler tab in Remix. 
+This smart contract is designed to deploy an ERC20 token named 'SatsChain' with the ticker 'SatsChain' and a total supply of 1000, utilizing 18 decimals for precision. To compile this contract, navigate to the Solidity Compiler tab in Remix. 
 
 Subsequently, proceed to the Deploy and Run Transactions tab, adjusting the environment to Injected Web3. Confirm the presence of the Custom (11503) network in the environment field; if not visible, access and modify your network settings through MetaMask. Your interface should now resemble the illustration below:
 
