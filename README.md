@@ -58,6 +58,7 @@ The SatsChain Bridge enables seamless asset transfers between Bitcoin and SatsCh
 
 Transaction fees on SatsChain are calculated using sats (BRC-20) tokens. The gas fees are designed to be minimal, ensuring cost-effective transactions.
 
+
 ### Smart Contracts
 
 SatsChain supports smart contracts fully compatible with the Ethereum Virtual Machine (EVM). You can deploy your existing Ethereum contracts with minimal modifications.
